@@ -17,7 +17,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Local development
-        "http://127.0.0.1:3000",  # Local development
+        "https://pytestpage.vercel.app",  # Local development
         "*"  # Temporary: Allow all origins (update after deploying frontend)
     ],
     allow_credentials=True,
