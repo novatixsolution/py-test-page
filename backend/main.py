@@ -45,7 +45,7 @@ class StudentAdmission(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "School Management System API is running"}
+    return {"message": "School Management System API is running - HI zain"}
 
 
 @app.post("/api/admissions")
