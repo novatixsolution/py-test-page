@@ -4,6 +4,13 @@ A Proof of Concept (PoC) for testing connection speed and architecture with a mo
 - **Backend**: Python FastAPI with Supabase
 - **Frontend**: Next.js 14+ with App Router and Tailwind CSS
 
+## 🌐 Live Demo
+
+- **Frontend (Vercel)**: https://pytestpage.vercel.app
+- **Backend API (Railway)**: https://py-test-page-production.up.railway.app
+- **API Docs (Swagger)**: https://py-test-page-production.up.railway.app/docs
+- **Database**: Supabase (PostgreSQL)
+
 ## 📁 Project Structure
 
 ```
@@ -112,15 +119,22 @@ Get-Job | Remove-Job
 
 ## 🧪 Testing the Application
 
-1. **Start both servers** (backend and frontend)
-2. **Open browser** and go to `http://localhost:3000`
-3. **Fill the form** with:
+### Test Production Deployment (Live)
+
+1. **Visit** https://pytestpage.vercel.app
+2. **Fill the form** with:
    - Student Name: e.g., "John Doe"
    - Father Name: e.g., "James Doe"
    - Class: e.g., "5th Grade"
-4. **Click Submit** and verify:
+3. **Click Submit** and verify:
    - Success message appears
    - Data is saved in Supabase `students` table
+
+### Test Local Development
+
+1. **Start both servers** (backend and frontend)
+2. **Open browser** and go to `http://localhost:3000`
+3. **Fill and submit the form** as above
 
 ---
 
@@ -128,6 +142,11 @@ Get-Job | Remove-Job
 
 ### Backend (FastAPI)
 
+**Production:**
+- **Base URL**: `https://py-test-page-production.up.railway.app`
+- **Documentation**: `https://py-test-page-production.up.railway.app/docs` (Swagger UI)
+
+**Local Development:**
 - **Base URL**: `http://127.0.0.1:8000`
 - **Documentation**: `http://127.0.0.1:8000/docs` (Swagger UI)
 
@@ -193,6 +212,19 @@ Get-Job | Remove-Job
 
 ---
 
+## 📝 Deployment
+
+This project is deployed on:
+- **Frontend**: Vercel (auto-deploys from `main` branch)
+- **Backend**: Railway (auto-deploys from `main` branch)
+- **Database**: Supabase
+
+**Deployment Features:**
+✅ GitHub integration (auto-deploy on push)  
+✅ Environment variables configured  
+✅ CORS setup for production  
+✅ SSL/HTTPS enabled  
+
 ## 📝 Next Steps
 
 This PoC demonstrates:
@@ -201,13 +233,14 @@ This PoC demonstrates:
 ✅ API communication between frontend/backend  
 ✅ CORS configuration  
 ✅ Form handling and validation  
+✅ **Production deployment (Vercel + Railway)**  
 
 **Potential enhancements:**
 - Add authentication
 - Implement data validation
 - Add more CRUD operations
-- Deploy to production
 - Add automated tests
+- Add monitoring and logging
 
 ---
 
