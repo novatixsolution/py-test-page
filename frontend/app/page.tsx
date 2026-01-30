@@ -70,7 +70,7 @@ export default function Home() {
                 required
                 value={formData.full_name}
                 onChange={(e) => setFormData({ ...formData, full_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition text-gray-900"
                 placeholder="Enter student's full name"
               />
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
                 required
                 value={formData.father_name}
                 onChange={(e) => setFormData({ ...formData, father_name: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition text-gray-900"
                 placeholder="Enter father's name"
               />
             </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 required
                 value={formData.class_grade}
                 onChange={(e) => setFormData({ ...formData, class_grade: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition text-gray-900"
                 placeholder="e.g., 5th Grade, Class 10"
               />
             </div>
